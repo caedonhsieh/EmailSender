@@ -14,7 +14,7 @@ There are two interfaces for this project: a webpage interface and a CLI interfa
 
 #### Webpage interface
 
-1. Run the command `./launcher.py'
+1. Run the command `./launcher.py`
 2. Open your favorite web browser and navigate to `localhost:8000`.
 3. Input text into the input fields, then click "Submit".
 
