@@ -13,7 +13,6 @@ def send(DOMAIN, SENDER, SENDNAME, RECIPIENT, SUBJECT, MESSAGE):
 
     try:
         server = smtplib.SMTP(host=HOST)
-        server.set_debuglevel(1)
         server.sendmail(SENDER, RECIPIENT, msg)
         server.quit()
     except smtplib.SMTPConnectError:
