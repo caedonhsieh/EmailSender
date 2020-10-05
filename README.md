@@ -27,3 +27,4 @@ There are two interfaces for this project: a webpage interface and a CLI interfa
 
 * The default domain used is google.com.
 * Certain email addresses will not work.
+* `control+c` will quit a terminal process.
