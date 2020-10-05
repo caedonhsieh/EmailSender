@@ -7,7 +7,7 @@ if [ ! -d "env" ]; then
 	deactivate
 fi
 
-# add line to automatically use virtual environment for launcher.py and send_email.py
+# add line to automatically use virtual environment for python viles
 for script in *.py
 do
 	line=$(head -n 1 $script)
@@ -16,3 +16,7 @@ do
 		(echo "#! $PWD/env/bin/python3" && cat $script) > temp && mv temp $script
 	fi
 done
+
+# give run permissions
+chmod +x send_email.py
+chmod +x launcher.py
