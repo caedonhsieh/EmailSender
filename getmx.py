@@ -7,5 +7,3 @@ def get_host(domain="google.com"):
     except:
         print("No mail exchange found for domain {}".format(domain))
     return host.to_text().split()[1][:-1]
-
-print(get_host())

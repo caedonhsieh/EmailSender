@@ -1,9 +1,10 @@
-input[type="text"] {
+input[type="text"], textarea {
     font-family: monospace;
-    width: 100px
-    border: 1px solid #555
-    transition: border 1s;
+    width: 80%;
+    border: 1px solid #555;
+    outline: 1px solid transparent;
     margin: 2px;
+    resize: vertical;
 }
 
 input:focus, textarea:focus {
@@ -11,40 +12,60 @@ input:focus, textarea:focus {
 }
 
 input[type="text"]:focus, textarea:focus {
-    border: 2px solid #555;
+    outline: 1px solid #555;
     border-radius: 2px;
-    padding: 2px;
-    margin: 0px;
 }
 
 input[type="submit"] {
     font-family: monospace;
     background-color: white;
     border: 1px solid #555;
+    outline: 1px solid transparent;
     border-radius: 2px;
-    margin: 2px;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    box-shadow: 1px 1px 1px 1px
-    border-radius: 2px;
-    padding: 2px;
-    margin: 0px;
+    outline: 1px solid #555;
+    cursor: pointer;
 }
 
 div {
     font-family: monospace;
-    word-wrap: normal;
 }
+
 label {
     font-family: monospace;
+    display: inline-block;
 }
 
 body {
     background-color: #ffd1dc;
 }
 
-textarea {
-    resize: none;
-    margin: 2px;
+.col-25 {
+    float: left;
+    width: 25%;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type="text"], textarea {
+    width: 98%;
+}
+
 }
