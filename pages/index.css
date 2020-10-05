@@ -1,0 +1,50 @@
+input[type="text"] {
+    font-family: monospace;
+    width: 100px
+    border: 1px solid #555
+    transition: border 1s;
+    margin: 2px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 2px solid #555;
+    border-radius: 2px;
+    padding: 2px;
+    margin: 0px;
+}
+
+input[type="submit"] {
+    font-family: monospace;
+    background-color: white;
+    border: 1px solid #555;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 1px 1px 1px 1px
+    border-radius: 2px;
+    padding: 2px;
+    margin: 0px;
+}
+
+div {
+    font-family: monospace;
+    word-wrap: normal;
+}
+label {
+    font-family: monospace;
+}
+
+body {
+    background-color: #ffd1dc;
+}
+
+textarea {
+    resize: none;
+    margin: 2px;
+}
